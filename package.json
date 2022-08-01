@@ -6,19 +6,17 @@
     "https": "^1.0.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.21.3"
+    "sequelize": "^6.21.3",
+    "nodemon": "^2.0.19"
   },
   "name": "api-rest-pohaap",
   "version": "1.0.0",
   "description": "Api rest para comunicar poha ñanApp",
   "main": "./src/server.js",
   "scripts": {
-    "start": "node ./src/server.js",
+    "start": "nodemon server",
     "stop": "nodemon server"
   },
   "author": "Andres Vera",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.19"
-  }
+  "license": "ISC"
 }
