@@ -11,7 +11,7 @@
   "description": "Api rest para comunicar poha ñanApp",
   "main": "./src/server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node src/server.js"
   },
   "author": "Andres Vera",
   "license": "ISC",
