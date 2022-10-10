@@ -8,7 +8,7 @@ const sequelize = new  Sequelize(process.env.DB_DATABASE,process.env.DB_USER,pro
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     port: process.env.DB_PORT,
-    insecureAuth:true
+    //insecureAuth:true
 })
 
 module.exports = sequelize
