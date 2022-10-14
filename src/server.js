@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const database = require('./database')
 const rutas = require('./config_rutas')
-const port = process.env.PORT||4000;
+const port = process.env.PORT||3001;
 
 const conecta= async()=>{
 try {
