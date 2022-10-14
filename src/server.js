@@ -3,6 +3,15 @@ const app = express()
 const database = require('./database')
 const rutas = require('./config_rutas')
 const port = process.env.PORT||3001;
+const cors = require('cors')
+
+
+
+app.use(cors());/*aplica permiso para todos los origenes*/
+
+/*Filtramos los origenes que se pueden conectar*/
+//const siteList = ['http://localhost:3000','https://pohapp-web.onrender.com/']
+//app.use(cors({origin:siteList}));
 
 const conecta= async()=>{
 try {
