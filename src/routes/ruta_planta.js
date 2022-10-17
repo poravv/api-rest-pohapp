@@ -10,6 +10,11 @@ ruta.get('/getsql/:nombre',async (req,res)=>{
     res.json(rs_planta);
 })
 
+ruta.get('/getLimit',async (req,res)=>{
+    const rs_planta = await database.query(`select idplanta,nombre,descripcion,estado from planta where limit 100`,{ type: QueryTypes.SELECT })
+    res.json(rs_planta);
+})
+
 ruta.get('/get/',async (req,res)=>{
     const rs_planta = await planta.findAll();
     res.json(rs_planta);
