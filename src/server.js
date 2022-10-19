@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const database = require('./database')
 const rutas = require('./config_rutas')
-const port = process.env.PORT||4000;
+const port = process.env.PORT||3000;
 const cors = require('cors')
 
 
@@ -31,7 +31,7 @@ app.use(rutas)
 
 
 app.get('/',(_req,res)=>{
-res.send("Bienvenido a la Api rest ")
+res.send("Api rest Poha ÑanApp")
 })
 
 
