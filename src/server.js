@@ -17,11 +17,11 @@ const conecta= async()=>{
 try {
     database.authenticate()
     console.log("Base de datos conectada");
-} catch (error) {
+} catch (error) { 
     console.log("Error: ",error)
 }
 }
-
+ 
 conecta()
 
 app.use(express.urlencoded({limit: '50mb',extended:false}));
